@@ -1,9 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Coming soon</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Developer Portfolio</title>
+<style>
+  :root{
+    --bg:#0f172a; --card:#1e293b; --text:#e2e8f0; --muted:#94a3b8; --accent:#38bdf8;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    background:var(--bg); color:var(--text); line-height:1.6;
+  }
+  header{
+    padding:4rem 1.5rem 2rem; text-align:center;
+  }
+  header h1{font-size:2.2rem; margin:0 0 .5rem;}
+  header p{color:var(--muted); max-width:500px; margin:0 auto;}
+  nav{display:flex; justify-content:center; gap:1.5rem; margin-top:1.5rem; flex-wrap:wrap;}
+  nav a{color:var(--text); text-decoration:none; font-weight:500; padding:.3rem .6rem; border-radius:6px;}
+  nav a:hover, nav a:focus{background:var(--card); color:var(--accent);}
+  section{max-width:800px; margin:0 auto; padding:2.5rem 1.5rem;}
+  h2{font-size:1.5rem; border-bottom:2px solid var(--accent); display:inline-block; padding-bottom:.3rem; margin-bottom:1.2rem;}
+  .projects{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.2rem;}
+  .card{
+    background:var(--card); padding:1.2rem; border-radius:10px;
+    border:1px solid #334155; transition:transform .15s;
+  }
+  .card:hover{transform:translateY(-4px);}
+  .card h3{margin:0 0 .5rem; font-size:1.1rem;}
+  .card p{color:var(--muted); font-size:.95rem; margin:0 0 .8rem;}
+  .card a{color:var(--accent); text-decoration:none; font-size:.9rem;}
+  .skills{display:flex; flex-wrap:wrap; gap:.6rem;}
+  .skill{background:var(--card); padding:.4rem .9rem; border-radius:20px; font-size:.9rem; border:1px solid #334155;}
+  .contact-list{list-style:none; padding:0; display:flex; flex-direction:column; gap:.6rem;}
+  .contact-list a{color:var(--accent); text-decoration:none;}
+  footer{text-align:center; padding:2rem; color:var(--muted); font-size:.85rem;}
+  a:focus, button:focus{outline:2px solid var(--accent); outline-offset:2px;}
+</style>
 </head>
-<body><p>Coming soon: this page is written by Agent Room.</p></body>
+<body>
+
+<header>
+  <h1>👋 Hi, I'm <span style="color:var(--accent)">Your Name</span></h1>
+  <p>A beginner developer learning to build things on the web. Welcome to my portfolio!</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I'm just starting out in software development. I enjoy solving small problems, learning new tools,
+  and building projects that help me practice. This site is one of them — built with plain HTML, CSS, and JavaScript.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Project One</h3>
+      <p>Short description of what this project does and what you learned building it.</p>
+      <a href="#">View project →</a>
+    </div>
+    <div class="card">
+      <h3>Project Two</h3>
+      <p>Short description of what this project does and what you learned building it.</p>
+      <a href="#">View project →</a>
+    </div>
+    <div class="card">
+      <h3>Project Three</h3>
+      <p>Short description of what this project does and what you learned building it.</p>
+      <a href="#">View project →</a>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span class="skill">HTML</span>
+    <span class="skill">CSS</span>
+    <span class="skill">JavaScript</span>
+    <span class="skill">Git</span>
+    <span class="skill">Learning more every day 🌱</span>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <ul class="contact-list">
+    <li>📧 <a href="mailto:you@example.com">you@example.com</a></li>
+    <li>💻 <a href="#" target="_blank" rel="noopener">GitHub</a></li>
+    <li>🔗 <a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+  </ul>
+</section>
+
+<footer>
+  © 2026 Your Name. Built with HTML &amp; CSS.
+</footer>
+
+</body>
 </html>
